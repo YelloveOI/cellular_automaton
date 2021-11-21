@@ -1,0 +1,12 @@
+#ifndef CELLULAR_AUTOMATA_CONTROLLER_H
+#define CELLULAR_AUTOMATA_CONTROLLER_H
+
+
+class Controller {
+public:
+private:
+
+};
+
+
+#endif //CELLULAR_AUTOMATA_CONTROLLER_H

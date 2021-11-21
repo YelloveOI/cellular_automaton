@@ -1,0 +1,11 @@
+#ifndef CELLULAR_AUTOMATA_ABSTRACT_VIEW_H
+#define CELLULAR_AUTOMATA_ABSTRACT_VIEW_H
+
+
+class Abstract_view {
+public:
+
+};
+
+
+#endif //CELLULAR_AUTOMATA_ABSTRACT_VIEW_H

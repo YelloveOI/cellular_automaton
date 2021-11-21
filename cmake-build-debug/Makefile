@@ -128,6 +128,54 @@ cellular_automata/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/build
 .PHONY : cellular_automata/fast
 
+Abstract_view.obj: Abstract_view.cpp.obj
+.PHONY : Abstract_view.obj
+
+# target to build an object file
+Abstract_view.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Abstract_view.cpp.obj
+.PHONY : Abstract_view.cpp.obj
+
+Abstract_view.i: Abstract_view.cpp.i
+.PHONY : Abstract_view.i
+
+# target to preprocess a source file
+Abstract_view.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Abstract_view.cpp.i
+.PHONY : Abstract_view.cpp.i
+
+Abstract_view.s: Abstract_view.cpp.s
+.PHONY : Abstract_view.s
+
+# target to generate assembly for a file
+Abstract_view.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Abstract_view.cpp.s
+.PHONY : Abstract_view.cpp.s
+
+App.obj: App.cpp.obj
+.PHONY : App.obj
+
+# target to build an object file
+App.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/App.cpp.obj
+.PHONY : App.cpp.obj
+
+App.i: App.cpp.i
+.PHONY : App.i
+
+# target to preprocess a source file
+App.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/App.cpp.i
+.PHONY : App.cpp.i
+
+App.s: App.cpp.s
+.PHONY : App.s
+
+# target to generate assembly for a file
+App.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/App.cpp.s
+.PHONY : App.cpp.s
+
 Cellular_Automaton.obj: Cellular_Automaton.cpp.obj
 .PHONY : Cellular_Automaton.obj
 
@@ -151,6 +199,78 @@ Cellular_Automaton.s: Cellular_Automaton.cpp.s
 Cellular_Automaton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Cellular_Automaton.cpp.s
 .PHONY : Cellular_Automaton.cpp.s
+
+Console_view.obj: Console_view.cpp.obj
+.PHONY : Console_view.obj
+
+# target to build an object file
+Console_view.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Console_view.cpp.obj
+.PHONY : Console_view.cpp.obj
+
+Console_view.i: Console_view.cpp.i
+.PHONY : Console_view.i
+
+# target to preprocess a source file
+Console_view.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Console_view.cpp.i
+.PHONY : Console_view.cpp.i
+
+Console_view.s: Console_view.cpp.s
+.PHONY : Console_view.s
+
+# target to generate assembly for a file
+Console_view.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Console_view.cpp.s
+.PHONY : Console_view.cpp.s
+
+Controller.obj: Controller.cpp.obj
+.PHONY : Controller.obj
+
+# target to build an object file
+Controller.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Controller.cpp.obj
+.PHONY : Controller.cpp.obj
+
+Controller.i: Controller.cpp.i
+.PHONY : Controller.i
+
+# target to preprocess a source file
+Controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Controller.cpp.i
+.PHONY : Controller.cpp.i
+
+Controller.s: Controller.cpp.s
+.PHONY : Controller.s
+
+# target to generate assembly for a file
+Controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Controller.cpp.s
+.PHONY : Controller.cpp.s
+
+Window_view.obj: Window_view.cpp.obj
+.PHONY : Window_view.obj
+
+# target to build an object file
+Window_view.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Window_view.cpp.obj
+.PHONY : Window_view.cpp.obj
+
+Window_view.i: Window_view.cpp.i
+.PHONY : Window_view.i
+
+# target to preprocess a source file
+Window_view.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Window_view.cpp.i
+.PHONY : Window_view.cpp.i
+
+Window_view.s: Window_view.cpp.s
+.PHONY : Window_view.s
+
+# target to generate assembly for a file
+Window_view.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/Window_view.cpp.s
+.PHONY : Window_view.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -185,9 +305,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... cellular_automata
+	@echo ... Abstract_view.obj
+	@echo ... Abstract_view.i
+	@echo ... Abstract_view.s
+	@echo ... App.obj
+	@echo ... App.i
+	@echo ... App.s
 	@echo ... Cellular_Automaton.obj
 	@echo ... Cellular_Automaton.i
 	@echo ... Cellular_Automaton.s
+	@echo ... Console_view.obj
+	@echo ... Console_view.i
+	@echo ... Console_view.s
+	@echo ... Controller.obj
+	@echo ... Controller.i
+	@echo ... Controller.s
+	@echo ... Window_view.obj
+	@echo ... Window_view.i
+	@echo ... Window_view.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
