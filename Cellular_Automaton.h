@@ -1,7 +1,6 @@
 #ifndef CELLULAR_AUTOMATA_CELLULAR_AUTOMATON_H
 #define CELLULAR_AUTOMATA_CELLULAR_AUTOMATON_H
 #include "vector"
-#include "SFML/Graphics.hpp"
 
 class Cellular_Automaton {
 public:

@@ -10,7 +10,9 @@ public:
     App(unsigned int width, unsigned int height, unsigned int game_rule, unsigned int intervalMS);
     void start();
     void set_interval(unsigned int intervalMS);
+    void stop();
 private:
+    bool _power_flag = false;
     const unsigned int _app_width = 0;
     const unsigned int _app_height = 0;
     float _interval = 1;

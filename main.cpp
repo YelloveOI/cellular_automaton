@@ -1,13 +1,51 @@
-#include <conio.h>
 #include "Cellular_Automaton.h"
 #include "App.h"
+#include "thread"
+#include "iostream"
+#include "windows.h"
+#include "fstream"
+
+const unsigned int WIDTH = 600;
+const unsigned int HEIGHT = 450;
+const unsigned int INTERVAL_MS = 10;
 
 int main() {
+    std::cout << "Rules range: 0-255, interesting ones: 105, 57, 169, 73, 75, 30" << std::endl;
+    std::cout << "<SPACE> for slowdown, <ESC> for quit" << std::endl;
+    std::cout << "Enter the rule:";
+    unsigned  int rule;
+    std::cin >> rule;
 
     //105, 57, 169, 73, 77, 75, 133
-    App app(320, 160, 105, 25);
-    app.start();
+    App app(WIDTH, HEIGHT, rule, INTERVAL_MS);
 
-    getch();
+    std::thread app_thread(&App::start, std::ref(app));
+
+    bool prev_space = false;
+    auto space_processor = [&prev_space, &app] () {
+        while(true) {
+            if(GetAsyncKeyState(VK_SPACE) & 0x8000) {
+                if(!prev_space) {
+                    app.set_interval(4*INTERVAL_MS);
+                    prev_space = true;
+                }
+            } else {
+                if(prev_space) {
+                    app.set_interval(INTERVAL_MS);
+                    prev_space = false;
+                }
+            }
+
+            if(GetAsyncKeyState(VK_ESCAPE) & 0x8000) {
+                app.stop();
+                exit(1);
+            }
+        }
+    };
+
+    std::thread key_processor_thread(space_processor);
+
+    app_thread.join();
+    key_processor_thread.join();
     return 0;
 }

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Console_view.h"
+#include "thread"
 
 const char FILLED = (char)219;
 const char BLANK = (char)176;
@@ -36,8 +37,10 @@ Console_view::Console_view(unsigned short width, unsigned short height) :
     CONSOLE_FONT_INFOEX cfi;
     cfi.cbSize = sizeof(cfi);
     cfi.nFont = 0;
-    cfi.dwFontSize.X = 4;
-    cfi.dwFontSize.Y = 4;
+    cfi.dwFontSize.X = 2;
+    cfi.dwFontSize.Y = 2;
+    cfi.FontFamily = FF_DONTCARE;
+    cfi.FontWeight = FW_NORMAL;
 
     wcscpy_s(cfi.FaceName, L"Consolas");
     SetCurrentConsoleFontEx(handle, false, &cfi);
@@ -71,7 +74,6 @@ void Console_view::println(char* line) {
         }
 
         for(int i = 0; i < _console_width; ++i) {
-//            _screen_buffer[(_console_height-1)*_console_width+i] = line[i];
             if(line[i]) {
                 _screen_buffer[(_console_height-1)*_console_width+i] = FILLED;
             } else {
@@ -96,4 +98,16 @@ void Console_view::display() {
     DWORD dw = 0;
     HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
     WriteConsoleOutputCharacter(handle, _screen_buffer, _console_height * _console_width, {0, 0 }, &dw);
+}
+
+void Console_view::clear() {
+    DWORD count;
+    HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
+    CONSOLE_SCREEN_BUFFER_INFO csbi;
+
+    GetConsoleScreenBufferInfo(handle, &csbi );
+    FillConsoleOutputCharacter(handle, (TCHAR)' ', csbi.dwSize.X*csbi.dwSize.Y, {0, 0}, &count);
+    FillConsoleOutputAttribute(handle, csbi.wAttributes,  csbi.dwSize.X*csbi.dwSize.Y, {0, 0}, &count);
+    SetConsoleCursorPosition(handle, {0, 0});
+
 }

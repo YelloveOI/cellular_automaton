@@ -12,6 +12,7 @@ public:
     void println(char* line) override;
     void print(char** screen) override;
     bool open() const override;
+    void clear();
     void close();
 
 private:
