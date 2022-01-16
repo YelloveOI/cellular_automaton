@@ -15,7 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/IView.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/views/IView.cpp.obj"
   "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/Window_view.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/views/Window_view.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

@@ -10,7 +10,7 @@ public:
     ~Console_view() override;
 
     void println(char* line) override;
-    void print(char** screen) override;
+    void print(std::vector<bool> screen) override;
     bool open() const override;
     void clear();
     void close();

@@ -3,11 +3,10 @@
 #include "thread"
 #include "iostream"
 #include "windows.h"
-#include "fstream"
 
-const unsigned int WIDTH = 600;
-const unsigned int HEIGHT = 450;
-const unsigned int INTERVAL_MS = 10;
+const unsigned int WIDTH = 200; //600
+const unsigned int HEIGHT = 150; //450
+const unsigned int INTERVAL_MS = 25;
 
 int main() {
     std::cout << "Rules range: 0-255, interesting ones: 105, 57, 169, 73, 75, 30" << std::endl;
@@ -26,7 +25,7 @@ int main() {
         while(true) {
             if(GetAsyncKeyState(VK_SPACE) & 0x8000) {
                 if(!prev_space) {
-                    app.set_interval(4*INTERVAL_MS);
+                    app.set_interval(10*INTERVAL_MS);
                     prev_space = true;
                 }
             } else {

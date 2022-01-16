@@ -37,8 +37,8 @@ Console_view::Console_view(unsigned short width, unsigned short height) :
     CONSOLE_FONT_INFOEX cfi;
     cfi.cbSize = sizeof(cfi);
     cfi.nFont = 0;
-    cfi.dwFontSize.X = 2;
-    cfi.dwFontSize.Y = 2;
+    cfi.dwFontSize.X = 4;
+    cfi.dwFontSize.Y = 4;
     cfi.FontFamily = FF_DONTCARE;
     cfi.FontWeight = FW_NORMAL;
 
@@ -51,38 +51,44 @@ Console_view::Console_view(unsigned short width, unsigned short height) :
 
 }
 
-void Console_view::print(char** screen) {
+void Console_view::print(std::vector<bool> screen) {
+    unsigned int square = _console_width*_console_height;
 
-}
-
-void Console_view::println(char* line) {
-    if(_gen < _console_height) {
-        for(int i = 0; i < _console_width; ++i) {
-            if(line[i]) {
-                _screen_buffer[_gen*_console_width+i] = FILLED;
-            } else {
-                _screen_buffer[_gen*_console_width+i] = BLANK;
-            }
-        }
-
-        ++_gen;
-    } else {
-        for(int j = 1; j < _console_height; ++j) {
-            for(int i = 0; i < _console_width; ++i) {
-                _screen_buffer[(j-1)*_console_width+i] = _screen_buffer[j*_console_width+i];
-            }
-        }
-
-        for(int i = 0; i < _console_width; ++i) {
-            if(line[i]) {
-                _screen_buffer[(_console_height-1)*_console_width+i] = FILLED;
-            } else {
-                _screen_buffer[(_console_height-1)*_console_width+i] = BLANK;
-            }
-        }
+    for(int i = 0; i < square; ++i) {
+        screen.at(i) ? _screen_buffer[i] = FILLED : _screen_buffer[i] = BLANK;
     }
 
     display();
+}
+
+void Console_view::println(char* line) {
+//    if(_gen < _console_height) {
+//        for(int i = 0; i < _console_width; ++i) {
+//            if(line[i]) {
+//                _screen_buffer[_gen*_console_width+i] = FILLED;
+//            } else {
+//                _screen_buffer[_gen*_console_width+i] = BLANK;
+//            }
+//        }
+//
+//        ++_gen;
+//    } else {
+//        for(int j = 1; j < _console_height; ++j) {
+//            for(int i = 0; i < _console_width; ++i) {
+//                _screen_buffer[(j-1)*_console_width+i] = _screen_buffer[j*_console_width+i];
+//            }
+//        }
+//
+//        for(int i = 0; i < _console_width; ++i) {
+//            if(line[i]) {
+//                _screen_buffer[(_console_height-1)*_console_width+i] = FILLED;
+//            } else {
+//                _screen_buffer[(_console_height-1)*_console_width+i] = BLANK;
+//            }
+//        }
+//    }
+//
+//    display();
 }
 
 bool Console_view::open() const {

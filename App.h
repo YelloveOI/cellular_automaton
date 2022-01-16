@@ -2,6 +2,9 @@
 #define CELLULAR_AUTOMATA_APP_H
 #include "views/IView.h"
 #include "Cellular_Automaton.h"
+#include <queue>
+#include <stack>
+#include "thread"
 
 class App {
 public:
@@ -15,10 +18,10 @@ private:
     bool _power_flag = false;
     const unsigned int _app_width = 0;
     const unsigned int _app_height = 0;
-    float _interval = 1;
+    unsigned int _interval = 0;
     float _time = 0;
     IView* _view = nullptr;
-    Cellular_Automaton _ca;
+    unsigned int _game_rule = 0;
 };
 
 

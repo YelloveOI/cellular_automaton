@@ -6,19 +6,35 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/Console_view.cpp
-iostream
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/App.h
+views/IView.h
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/IView.h
+Cellular_Automaton.h
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Cellular_Automaton.h
+queue
 -
-Console_view.h
-C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/Console_view.h
+stack
+-
 thread
-C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/thread
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/thread
 
-C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/Console_view.h
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Cellular_Automaton.h
+vector
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/vector
+
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/main.cpp
+Cellular_Automaton.h
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Cellular_Automaton.h
+App.h
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/App.h
+thread
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/thread
+iostream
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/iostream
 windows.h
-C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/windows.h
-IView.h
-C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/IView.h
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/windows.h
 
 C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/IView.h
+vector
+C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/vector
 
