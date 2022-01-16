@@ -17,7 +17,7 @@ public:
 
 private:
     void display();
-    boolean _open = true;
+    bool _open = true;
     unsigned short _console_width = 0;
     unsigned short _console_height = 0;
     char* _screen_buffer = nullptr;

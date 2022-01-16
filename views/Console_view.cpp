@@ -37,8 +37,8 @@ Console_view::Console_view(unsigned short width, unsigned short height) :
     CONSOLE_FONT_INFOEX cfi;
     cfi.cbSize = sizeof(cfi);
     cfi.nFont = 0;
-    cfi.dwFontSize.X = 4;
-    cfi.dwFontSize.Y = 4;
+    cfi.dwFontSize.X = 3;
+    cfi.dwFontSize.Y = 3;
     cfi.FontFamily = FF_DONTCARE;
     cfi.FontWeight = FW_NORMAL;
 

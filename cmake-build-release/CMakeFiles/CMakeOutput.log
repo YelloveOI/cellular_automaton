@@ -504,3 +504,55 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_65fd5/fast && C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_65fd5.dir\build.make CMakeFiles/cmTC_65fd5.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65fd5.dir/CheckIncludeFile.c.obj
+C:\mingw64\bin\gcc.exe    -o CMakeFiles\cmTC_65fd5.dir\CheckIncludeFile.c.obj -c C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-release\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_65fd5.exe
+"C:\Users\Mi\AppData\Local\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_65fd5.dir\link.txt --verbose=1
+"C:\Users\Mi\AppData\Local\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_65fd5.dir/objects.a
+C:\mingw64\bin\ar.exe cr CMakeFiles\cmTC_65fd5.dir/objects.a @CMakeFiles\cmTC_65fd5.dir\objects1.rsp
+C:\mingw64\bin\gcc.exe -Wl,--whole-archive CMakeFiles\cmTC_65fd5.dir/objects.a -Wl,--no-whole-archive -o cmTC_65fd5.exe -Wl,--out-implib,libcmTC_65fd5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_65fd5.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-release/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_e8e8c/fast && C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_e8e8c.dir\build.make CMakeFiles/cmTC_e8e8c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e8e8c.dir/src.c.obj
+C:\mingw64\bin\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\cmTC_e8e8c.dir\src.c.obj -c C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-release\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_e8e8c.exe
+"C:\Users\Mi\AppData\Local\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e8e8c.dir\link.txt --verbose=1
+"C:\Users\Mi\AppData\Local\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_e8e8c.dir/objects.a
+C:\mingw64\bin\ar.exe cr CMakeFiles\cmTC_e8e8c.dir/objects.a @CMakeFiles\cmTC_e8e8c.dir\objects1.rsp
+C:\mingw64\bin\gcc.exe -Wl,--whole-archive CMakeFiles\cmTC_e8e8c.dir/objects.a -Wl,--no-whole-archive -o cmTC_e8e8c.exe -Wl,--out-implib,libcmTC_e8e8c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e8e8c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-release/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

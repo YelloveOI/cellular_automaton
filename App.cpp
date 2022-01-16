@@ -3,6 +3,7 @@
 #include "App.h"
 #include "views/Window_view.h"
 #include "views/Console_view.h"
+#include "mutex"
 
 App::App(unsigned int width, unsigned int height, unsigned int game_rule, unsigned int intervalMS) :
 _app_width(width),
@@ -11,7 +12,7 @@ _time(0),
 _interval(intervalMS),
 _view(new Console_view(width, height)),
 _power_flag(true),
-_game_rule(game_rule)//TODO
+_game_rule(game_rule)
 {
 }
 
@@ -31,6 +32,8 @@ void App::start() {
 
         while(calculate_flag) {
             ca.map(line);
+            ca.next();
+            std::this_thread::sleep_for(std::chrono::milliseconds(15));
 
             if(gen < height) {
                 for(int i = 0; i < width; ++i) {
@@ -57,12 +60,11 @@ void App::start() {
                 }
             }
 
-            if(screen.size() > 20) {
+            if(screens.size() > 100) {
                 std::this_thread::sleep_for(std::chrono::milliseconds(50));
             }
 
             screens.push(screen);
-            ca.next();
         }
     };
     std::thread calculate_screen_thread(calculate_screen, _app_height, _app_width);
@@ -80,7 +82,7 @@ void App::start() {
     }
 
     calculate_flag = false;
-    //TODO join
+    calculate_screen_thread.join();
 }
 
 App::~App() {
