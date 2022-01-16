@@ -1,17 +1,17 @@
 #ifndef CELLULAR_AUTOMATA_CONSOLE_VIEW_H
 #define CELLULAR_AUTOMATA_CONSOLE_VIEW_H
 #include "windows.h"
+#include "IView.h"
 
-
-class Console_view {
+class Console_view : public IView {
 public:
     Console_view(unsigned short width, unsigned short height);
     Console_view() = default;
-    ~Console_view();
+    ~Console_view() override;
 
-    void print(char** screen);
-    void println(char* string);
-    boolean open() const;
+    void println(char* line) override;
+    void print(char** screen) override;
+    bool open() const override;
     void close();
 
 private:

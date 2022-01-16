@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Abstract_view.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/Abstract_view.cpp.obj"
   "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/App.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/App.cpp.obj"
   "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Cellular_Automaton.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/Cellular_Automaton.cpp.obj"
-  "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Console_view.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/Console_view.cpp.obj"
-  "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Controller.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/Controller.cpp.obj"
-  "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Window_view.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/Window_view.cpp.obj"
+  "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/KeyProcessor.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/KeyProcessor.cpp.obj"
   "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/main.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/main.cpp.obj"
+  "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/Console_view.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/views/Console_view.cpp.obj"
+  "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/IView.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/views/IView.cpp.obj"
+  "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/Window_view.cpp" "C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir/views/Window_view.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

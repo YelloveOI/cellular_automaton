@@ -11,7 +11,7 @@ public:
     char* map() const;
     char* pmap() const;
     void next();
-    void cell(unsigned int position, char state);
+    void cell(unsigned int position, bool state);
 private:
     const unsigned int _width = 0;
     const unsigned char _rule = 0;

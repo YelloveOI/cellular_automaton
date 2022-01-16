@@ -1,33 +1,41 @@
+#include <conio.h>
 #include "App.h"
-#include "Cellular_Automaton.h"
-#include "Window_view.h"
-#include "Console_view.h"
+#include "views/Window_view.h"
+#include "views/Console_view.h"
 
 void App::start() {
-    //105, 57, 169, 73
     Console_view con_view(_app_width, _app_height);
-//    Window_view win_view(_app_width, _app_height);
-    Cellular_Automaton ca(_app_width, 73);
-    ca.cell(_app_width/2, 'x');
     sf::Clock clock;
+    _view = &con_view;
+
+    _ca.cell(_app_width/2, 'X');
 
     while(con_view.open()) {
         _time = clock.getElapsedTime().asSeconds();
 
         if(_interval <= _time) {
             clock.restart();
-
-//            win_view.println(ca.map());
-            con_view.println(ca.map());
-            ca.next();
+            _view->println(_ca.map());
+            _ca.next();
         }
     }
+    _view = nullptr;
 }
 
-App::App(unsigned int width, unsigned int height) :
+App::App(unsigned int width, unsigned int height, unsigned int game_rule, unsigned int intervalMS) :
 _app_width(width),
 _app_height(height),
 _time(0),
-_interval(0.025)
+_interval(intervalMS/1000),
+_view(nullptr),
+_ca(Cellular_Automaton(_app_width, game_rule))
 {
+}
+
+App::~App() {
+    delete _view;
+}
+
+void App::set_interval(unsigned int intervalMS) {
+    _interval = ((float)intervalMS)/1000;
 }

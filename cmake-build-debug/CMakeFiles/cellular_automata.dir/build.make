@@ -65,47 +65,47 @@ include CMakeFiles/cellular_automata.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cellular_automata.dir/flags.make
 
-CMakeFiles/cellular_automata.dir/Window_view.cpp.obj: CMakeFiles/cellular_automata.dir/flags.make
-CMakeFiles/cellular_automata.dir/Window_view.cpp.obj: CMakeFiles/cellular_automata.dir/includes_CXX.rsp
-CMakeFiles/cellular_automata.dir/Window_view.cpp.obj: ../Window_view.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cellular_automata.dir/Window_view.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cellular_automata.dir\Window_view.cpp.obj -c C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\Window_view.cpp
+CMakeFiles/cellular_automata.dir/KeyProcessor.cpp.obj: CMakeFiles/cellular_automata.dir/flags.make
+CMakeFiles/cellular_automata.dir/KeyProcessor.cpp.obj: CMakeFiles/cellular_automata.dir/includes_CXX.rsp
+CMakeFiles/cellular_automata.dir/KeyProcessor.cpp.obj: ../KeyProcessor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cellular_automata.dir/KeyProcessor.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cellular_automata.dir\KeyProcessor.cpp.obj -c C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\KeyProcessor.cpp
 
-CMakeFiles/cellular_automata.dir/Window_view.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cellular_automata.dir/Window_view.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\Window_view.cpp > CMakeFiles\cellular_automata.dir\Window_view.cpp.i
+CMakeFiles/cellular_automata.dir/KeyProcessor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cellular_automata.dir/KeyProcessor.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\KeyProcessor.cpp > CMakeFiles\cellular_automata.dir\KeyProcessor.cpp.i
 
-CMakeFiles/cellular_automata.dir/Window_view.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cellular_automata.dir/Window_view.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\Window_view.cpp -o CMakeFiles\cellular_automata.dir\Window_view.cpp.s
+CMakeFiles/cellular_automata.dir/KeyProcessor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cellular_automata.dir/KeyProcessor.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\KeyProcessor.cpp -o CMakeFiles\cellular_automata.dir\KeyProcessor.cpp.s
 
-CMakeFiles/cellular_automata.dir/Abstract_view.cpp.obj: CMakeFiles/cellular_automata.dir/flags.make
-CMakeFiles/cellular_automata.dir/Abstract_view.cpp.obj: CMakeFiles/cellular_automata.dir/includes_CXX.rsp
-CMakeFiles/cellular_automata.dir/Abstract_view.cpp.obj: ../Abstract_view.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cellular_automata.dir/Abstract_view.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cellular_automata.dir\Abstract_view.cpp.obj -c C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\Abstract_view.cpp
+CMakeFiles/cellular_automata.dir/views/Window_view.cpp.obj: CMakeFiles/cellular_automata.dir/flags.make
+CMakeFiles/cellular_automata.dir/views/Window_view.cpp.obj: CMakeFiles/cellular_automata.dir/includes_CXX.rsp
+CMakeFiles/cellular_automata.dir/views/Window_view.cpp.obj: ../views/Window_view.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cellular_automata.dir/views/Window_view.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cellular_automata.dir\views\Window_view.cpp.obj -c C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\views\Window_view.cpp
 
-CMakeFiles/cellular_automata.dir/Abstract_view.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cellular_automata.dir/Abstract_view.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\Abstract_view.cpp > CMakeFiles\cellular_automata.dir\Abstract_view.cpp.i
+CMakeFiles/cellular_automata.dir/views/Window_view.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cellular_automata.dir/views/Window_view.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\views\Window_view.cpp > CMakeFiles\cellular_automata.dir\views\Window_view.cpp.i
 
-CMakeFiles/cellular_automata.dir/Abstract_view.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cellular_automata.dir/Abstract_view.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\Abstract_view.cpp -o CMakeFiles\cellular_automata.dir\Abstract_view.cpp.s
+CMakeFiles/cellular_automata.dir/views/Window_view.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cellular_automata.dir/views/Window_view.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\views\Window_view.cpp -o CMakeFiles\cellular_automata.dir\views\Window_view.cpp.s
 
-CMakeFiles/cellular_automata.dir/Controller.cpp.obj: CMakeFiles/cellular_automata.dir/flags.make
-CMakeFiles/cellular_automata.dir/Controller.cpp.obj: CMakeFiles/cellular_automata.dir/includes_CXX.rsp
-CMakeFiles/cellular_automata.dir/Controller.cpp.obj: ../Controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cellular_automata.dir/Controller.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cellular_automata.dir\Controller.cpp.obj -c C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\Controller.cpp
+CMakeFiles/cellular_automata.dir/views/IView.cpp.obj: CMakeFiles/cellular_automata.dir/flags.make
+CMakeFiles/cellular_automata.dir/views/IView.cpp.obj: CMakeFiles/cellular_automata.dir/includes_CXX.rsp
+CMakeFiles/cellular_automata.dir/views/IView.cpp.obj: ../views/IView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cellular_automata.dir/views/IView.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cellular_automata.dir\views\IView.cpp.obj -c C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\views\IView.cpp
 
-CMakeFiles/cellular_automata.dir/Controller.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cellular_automata.dir/Controller.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\Controller.cpp > CMakeFiles\cellular_automata.dir\Controller.cpp.i
+CMakeFiles/cellular_automata.dir/views/IView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cellular_automata.dir/views/IView.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\views\IView.cpp > CMakeFiles\cellular_automata.dir\views\IView.cpp.i
 
-CMakeFiles/cellular_automata.dir/Controller.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cellular_automata.dir/Controller.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\Controller.cpp -o CMakeFiles\cellular_automata.dir\Controller.cpp.s
+CMakeFiles/cellular_automata.dir/views/IView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cellular_automata.dir/views/IView.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\views\IView.cpp -o CMakeFiles\cellular_automata.dir\views\IView.cpp.s
 
 CMakeFiles/cellular_automata.dir/App.cpp.obj: CMakeFiles/cellular_automata.dir/flags.make
 CMakeFiles/cellular_automata.dir/App.cpp.obj: CMakeFiles/cellular_automata.dir/includes_CXX.rsp
@@ -121,19 +121,19 @@ CMakeFiles/cellular_automata.dir/App.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cellular_automata.dir/App.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\App.cpp -o CMakeFiles\cellular_automata.dir\App.cpp.s
 
-CMakeFiles/cellular_automata.dir/Console_view.cpp.obj: CMakeFiles/cellular_automata.dir/flags.make
-CMakeFiles/cellular_automata.dir/Console_view.cpp.obj: CMakeFiles/cellular_automata.dir/includes_CXX.rsp
-CMakeFiles/cellular_automata.dir/Console_view.cpp.obj: ../Console_view.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cellular_automata.dir/Console_view.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cellular_automata.dir\Console_view.cpp.obj -c C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\Console_view.cpp
+CMakeFiles/cellular_automata.dir/views/Console_view.cpp.obj: CMakeFiles/cellular_automata.dir/flags.make
+CMakeFiles/cellular_automata.dir/views/Console_view.cpp.obj: CMakeFiles/cellular_automata.dir/includes_CXX.rsp
+CMakeFiles/cellular_automata.dir/views/Console_view.cpp.obj: ../views/Console_view.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cellular_automata.dir/views/Console_view.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cellular_automata.dir\views\Console_view.cpp.obj -c C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\views\Console_view.cpp
 
-CMakeFiles/cellular_automata.dir/Console_view.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cellular_automata.dir/Console_view.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\Console_view.cpp > CMakeFiles\cellular_automata.dir\Console_view.cpp.i
+CMakeFiles/cellular_automata.dir/views/Console_view.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cellular_automata.dir/views/Console_view.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\views\Console_view.cpp > CMakeFiles\cellular_automata.dir\views\Console_view.cpp.i
 
-CMakeFiles/cellular_automata.dir/Console_view.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cellular_automata.dir/Console_view.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\Console_view.cpp -o CMakeFiles\cellular_automata.dir\Console_view.cpp.s
+CMakeFiles/cellular_automata.dir/views/Console_view.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cellular_automata.dir/views/Console_view.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\views\Console_view.cpp -o CMakeFiles\cellular_automata.dir\views\Console_view.cpp.s
 
 CMakeFiles/cellular_automata.dir/main.cpp.obj: CMakeFiles/cellular_automata.dir/flags.make
 CMakeFiles/cellular_automata.dir/main.cpp.obj: CMakeFiles/cellular_automata.dir/includes_CXX.rsp
@@ -165,22 +165,22 @@ CMakeFiles/cellular_automata.dir/Cellular_Automaton.cpp.s: cmake_force
 
 # Object files for target cellular_automata
 cellular_automata_OBJECTS = \
-"CMakeFiles/cellular_automata.dir/Window_view.cpp.obj" \
-"CMakeFiles/cellular_automata.dir/Abstract_view.cpp.obj" \
-"CMakeFiles/cellular_automata.dir/Controller.cpp.obj" \
+"CMakeFiles/cellular_automata.dir/KeyProcessor.cpp.obj" \
+"CMakeFiles/cellular_automata.dir/views/Window_view.cpp.obj" \
+"CMakeFiles/cellular_automata.dir/views/IView.cpp.obj" \
 "CMakeFiles/cellular_automata.dir/App.cpp.obj" \
-"CMakeFiles/cellular_automata.dir/Console_view.cpp.obj" \
+"CMakeFiles/cellular_automata.dir/views/Console_view.cpp.obj" \
 "CMakeFiles/cellular_automata.dir/main.cpp.obj" \
 "CMakeFiles/cellular_automata.dir/Cellular_Automaton.cpp.obj"
 
 # External object files for target cellular_automata
 cellular_automata_EXTERNAL_OBJECTS =
 
-cellular_automata.exe: CMakeFiles/cellular_automata.dir/Window_view.cpp.obj
-cellular_automata.exe: CMakeFiles/cellular_automata.dir/Abstract_view.cpp.obj
-cellular_automata.exe: CMakeFiles/cellular_automata.dir/Controller.cpp.obj
+cellular_automata.exe: CMakeFiles/cellular_automata.dir/KeyProcessor.cpp.obj
+cellular_automata.exe: CMakeFiles/cellular_automata.dir/views/Window_view.cpp.obj
+cellular_automata.exe: CMakeFiles/cellular_automata.dir/views/IView.cpp.obj
 cellular_automata.exe: CMakeFiles/cellular_automata.dir/App.cpp.obj
-cellular_automata.exe: CMakeFiles/cellular_automata.dir/Console_view.cpp.obj
+cellular_automata.exe: CMakeFiles/cellular_automata.dir/views/Console_view.cpp.obj
 cellular_automata.exe: CMakeFiles/cellular_automata.dir/main.cpp.obj
 cellular_automata.exe: CMakeFiles/cellular_automata.dir/Cellular_Automaton.cpp.obj
 cellular_automata.exe: CMakeFiles/cellular_automata.dir/build.make

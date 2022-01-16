@@ -5,16 +5,16 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(
         cellular_automata
-        Window_view.cpp
-        Window_view.h
-        Abstract_view.cpp
-        Abstract_view.h
-        Controller.cpp
-        Controller.h
+        KeyProcessor.cpp
+        KeyProcessor.h
+        views/Window_view.cpp
+        views/Window_view.h
+        views/IView.cpp
+        views/IView.h
         App.cpp
         App.h
-        Console_view.cpp
-        Console_view.h
+        views/Console_view.cpp
+        views/Console_view.h
         main.cpp
         Cellular_Automaton.cpp
         Cellular_Automaton.h

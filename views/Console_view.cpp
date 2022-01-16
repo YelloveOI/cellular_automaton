@@ -1,8 +1,11 @@
 #include <iostream>
 #include "Console_view.h"
 
+const char FILLED = (char)219;
+const char BLANK = (char)176;
+
 Console_view::~Console_view() {
-    delete _screen_buffer;
+    delete[] _screen_buffer;
 }
 
 Console_view::Console_view(unsigned short width, unsigned short height) :
@@ -19,33 +22,29 @@ Console_view::Console_view(unsigned short width, unsigned short height) :
     }
 
     HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
-    _COORD console_buffer_size = {static_cast<SHORT>(width), static_cast<SHORT>(height)};
-    _SMALL_RECT console_rect = {0, 0, static_cast<SHORT>(width - 1), static_cast<SHORT>(height - 1)};
-    HWND console = GetConsoleWindow();
+    _SMALL_RECT console_rect = { 0, 0, 1, 1 };
 
-    SetConsoleScreenBufferSize(handle, console_buffer_size);
     SetConsoleWindowInfo(handle, TRUE, &console_rect);
 
-//    CONSOLE_FONT_INFOEX cfi;
-//    COORD font_size = GetConsoleFontSize(handle, 0);
+    // set screen buffer size
+    COORD coord = { (short)_console_width, (short)_console_height };
+    SetConsoleScreenBufferSize(handle, coord);
 
-//    cfi.cbSize = sizeof(cfi);
-//    cfi.nFont = 0;
-//    cfi.dwFontSize.X = font_size.X/1.5;
-//    cfi.dwFontSize.Y = font_size.Y/1.5;
-//    cfi.FontFamily = FF_DONTCARE;
-//    cfi.FontWeight = FW_NORMAL;
-//    std::wcscpy(cfi.FaceName, L"ca_font");
-//    SetCurrentConsoleFontEx(GetStdHandle(STD_OUTPUT_HANDLE), FALSE, &cfi);
+    // attaches screen buffer to console
+    SetConsoleActiveScreenBuffer(handle);
 
-//    CONSOLE_FONT_INFOEX font = {};
-//    const short FONT_WIDTH = font.dwFontSize.X/2;
-//    const short FONT_HEIGHT = font.dwFontSize.Y/2;
-//
-//    GetCurrentConsoleFontEx(handle, false, &font);
-//    font.dwFontSize = { FONT_WIDTH, FONT_HEIGHT};
-//    font.cbSize = sizeof(font)/2;
-//    SetCurrentConsoleFontEx(handle, false, &font);
+    CONSOLE_FONT_INFOEX cfi;
+    cfi.cbSize = sizeof(cfi);
+    cfi.nFont = 0;
+    cfi.dwFontSize.X = 4;
+    cfi.dwFontSize.Y = 4;
+
+    wcscpy_s(cfi.FaceName, L"Consolas");
+    SetCurrentConsoleFontEx(handle, false, &cfi);
+
+    // set console window size
+    console_rect = { 0, 0, static_cast<SHORT>((short)_console_width - 1), static_cast<SHORT>((short)_console_height - 1) };
+    SetConsoleWindowInfo(handle, TRUE, &console_rect);
 
 }
 
@@ -53,10 +52,14 @@ void Console_view::print(char** screen) {
 
 }
 
-void Console_view::println(char* string) {
+void Console_view::println(char* line) {
     if(_gen < _console_height) {
         for(int i = 0; i < _console_width; ++i) {
-            _screen_buffer[_gen*_console_width+i] = string[i];
+            if(line[i]) {
+                _screen_buffer[_gen*_console_width+i] = FILLED;
+            } else {
+                _screen_buffer[_gen*_console_width+i] = BLANK;
+            }
         }
 
         ++_gen;
@@ -68,14 +71,19 @@ void Console_view::println(char* string) {
         }
 
         for(int i = 0; i < _console_width; ++i) {
-            _screen_buffer[(_console_height-1)*_console_width+i] = string[i];
+//            _screen_buffer[(_console_height-1)*_console_width+i] = line[i];
+            if(line[i]) {
+                _screen_buffer[(_console_height-1)*_console_width+i] = FILLED;
+            } else {
+                _screen_buffer[(_console_height-1)*_console_width+i] = BLANK;
+            }
         }
     }
 
     display();
 }
 
-boolean Console_view::open() const {
+bool Console_view::open() const {
     return _open;
 }
 
@@ -89,4 +97,3 @@ void Console_view::display() {
     HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
     WriteConsoleOutputCharacter(handle, _screen_buffer, _console_height * _console_width, {0, 0 }, &dw);
 }
-

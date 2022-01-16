@@ -86,12 +86,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Abstract_view.cpp">
-			<Option target="cellular_automata"/>
-		</Unit>
-		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Abstract_view.h">
-			<Option target="cellular_automata"/>
-		</Unit>
 		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/App.cpp">
 			<Option target="cellular_automata"/>
 		</Unit>
@@ -104,25 +98,31 @@
 		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Cellular_Automaton.h">
 			<Option target="cellular_automata"/>
 		</Unit>
-		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Console_view.cpp">
+		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/KeyProcessor.cpp">
 			<Option target="cellular_automata"/>
 		</Unit>
-		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Console_view.h">
-			<Option target="cellular_automata"/>
-		</Unit>
-		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Controller.cpp">
-			<Option target="cellular_automata"/>
-		</Unit>
-		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Controller.h">
-			<Option target="cellular_automata"/>
-		</Unit>
-		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Window_view.cpp">
-			<Option target="cellular_automata"/>
-		</Unit>
-		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/Window_view.h">
+		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/KeyProcessor.h">
 			<Option target="cellular_automata"/>
 		</Unit>
 		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/main.cpp">
+			<Option target="cellular_automata"/>
+		</Unit>
+		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/Console_view.cpp">
+			<Option target="cellular_automata"/>
+		</Unit>
+		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/Console_view.h">
+			<Option target="cellular_automata"/>
+		</Unit>
+		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/IView.cpp">
+			<Option target="cellular_automata"/>
+		</Unit>
+		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/IView.h">
+			<Option target="cellular_automata"/>
+		</Unit>
+		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/Window_view.cpp">
+			<Option target="cellular_automata"/>
+		</Unit>
+		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/views/Window_view.h">
 			<Option target="cellular_automata"/>
 		</Unit>
 		<Unit filename="C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/CMakeLists.txt">

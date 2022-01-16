@@ -43,12 +43,12 @@ void Cellular_Automaton::next() {
         if(_p_map[i]) current_case += 2;
         if(_p_map[i-1]) current_case += 4;
         if(_conv_rule[current_case]) {
-            _map[i] = 'X';
-        };
+            _map[i] = 1;
+        }
     }
 }
 
-void Cellular_Automaton::cell(unsigned int position, char state) {
+void Cellular_Automaton::cell(unsigned int position, bool state) {
     _map[position-1] = state;
     _p_map[position-1] = state;
 }
