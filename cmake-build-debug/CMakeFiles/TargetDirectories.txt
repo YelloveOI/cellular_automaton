@@ -1,3 +1,0 @@
-C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/cellular_automata.dir
-C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Mi/Desktop/root/CVUT/PJC/cellular-automata/cmake-build-debug/CMakeFiles/rebuild_cache.dir
