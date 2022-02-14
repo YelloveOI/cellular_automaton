@@ -8,8 +8,6 @@ set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${COMPILER_FLAGS}")
 
 add_executable(
         cellular_automata
-        views/Window_view.cpp
-        views/Window_view.h
         views/IView.cpp
         views/IView.h
         App.cpp

@@ -56,10 +56,10 @@ RM = "C:\Users\Mi\AppData\Local\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata
+CMAKE_SOURCE_DIR = C:\Users\Mi\Desktop\root\CVUT\old\PJC\cellular-automata
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-release
+CMAKE_BINARY_DIR = C:\Users\Mi\Desktop\root\CVUT\old\PJC\cellular-automata\cmake-build-release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-release\CMakeFiles C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-release\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mi\Desktop\root\CVUT\old\PJC\cellular-automata\cmake-build-release\CMakeFiles C:\Users\Mi\Desktop\root\CVUT\old\PJC\cellular-automata\cmake-build-release\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mi\Desktop\root\CVUT\PJC\cellular-automata\cmake-build-release\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mi\Desktop\root\CVUT\old\PJC\cellular-automata\cmake-build-release\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -248,30 +248,6 @@ views/IView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/views/IView.cpp.s
 .PHONY : views/IView.cpp.s
 
-views/Window_view.obj: views/Window_view.cpp.obj
-.PHONY : views/Window_view.obj
-
-# target to build an object file
-views/Window_view.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/views/Window_view.cpp.obj
-.PHONY : views/Window_view.cpp.obj
-
-views/Window_view.i: views/Window_view.cpp.i
-.PHONY : views/Window_view.i
-
-# target to preprocess a source file
-views/Window_view.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/views/Window_view.cpp.i
-.PHONY : views/Window_view.cpp.i
-
-views/Window_view.s: views/Window_view.cpp.s
-.PHONY : views/Window_view.s
-
-# target to generate assembly for a file
-views/Window_view.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cellular_automata.dir\build.make CMakeFiles/cellular_automata.dir/views/Window_view.cpp.s
-.PHONY : views/Window_view.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -296,9 +272,6 @@ help:
 	@echo ... views/IView.obj
 	@echo ... views/IView.i
 	@echo ... views/IView.s
-	@echo ... views/Window_view.obj
-	@echo ... views/Window_view.i
-	@echo ... views/Window_view.s
 .PHONY : help
 
 

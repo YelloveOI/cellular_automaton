@@ -1,7 +1,6 @@
 #include <ctime>
 #include <iostream>
 #include "App.h"
-#include "views/Window_view.h"
 #include "views/Console_view.h"
 #include "mutex"
 

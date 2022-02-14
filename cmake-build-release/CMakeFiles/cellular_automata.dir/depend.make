@@ -6,8 +6,7 @@ CMakeFiles/cellular_automata.dir/App.cpp.obj: \
  ../App.h \
  ../Cellular_Automaton.h \
  ../views/Console_view.h \
- ../views/IView.h \
- ../views/Window_view.h
+ ../views/IView.h
 CMakeFiles/cellular_automata.dir/Cellular_Automaton.cpp.obj: \
  ../Cellular_Automaton.cpp \
  ../Cellular_Automaton.h
@@ -23,5 +22,3 @@ CMakeFiles/cellular_automata.dir/views/Console_view.cpp.obj: \
 CMakeFiles/cellular_automata.dir/views/IView.cpp.obj: \
  ../views/IView.cpp \
  ../views/IView.h
-CMakeFiles/cellular_automata.dir/views/Window_view.cpp.obj: \
- ../views/Window_view.cpp

@@ -10,41 +10,8 @@ const unsigned int HEIGHT = 300; //450
 const unsigned int INTERVAL_MS = 5;
 
 int main(int argc, char* argv[]) {
-//    std::cout << "Rules range: 0-255, interesting ones: 105, 57, 169, 73, 75, 30" << std::endl;
-//    std::cout << "<SPACE> for slowdown, <ESC> for quit" << std::endl;
-//    std::cout << "Enter the rule:";
-//    unsigned  int rule;
-//    std::cin >> rule;
-
-    char help[6] = {'-', '-', 'h', 'e', 'l', 'p'};
-    int rule;
-
-    if(argc > 2 || argc == 0) {
-        exit(EXIT_FAILURE);
-    } else {
-        if(
-                argv[1][0] == help[0] &&
-                argv[1][1] == help[1] &&
-                argv[1][2] == help[2] &&
-                argv[1][3] == help[3] &&
-                argv[1][4] == help[4] &&
-                argv[1][5] == help[5]
-                ) {
-            std::cout << "Rules range: 0-255, interesting ones: 105, 57, 169, 73, 75, 30" << std::endl;
-            std::cout << "<SPACE> for slowdown, <ESC> for quit" << std::endl;
-            std::cout << "Enter the rule:";
-            exit(1);
-        }
-
-        std::stringstream stream(argv[1]);
-        stream >> rule;
-        if(!rule) {
-            exit(EXIT_FAILURE);
-        }
-    }
-
-    //105, 57, 169, 73, 77, 75, 133
-    App app(WIDTH, HEIGHT, rule, INTERVAL_MS);
+    //105, 57, 169, 73, 77, 75, 133, 129
+    App app(WIDTH, HEIGHT, 129, INTERVAL_MS);
 
     std::thread app_thread(&App::start, std::ref(app));
 
